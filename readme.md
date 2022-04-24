@@ -4,7 +4,7 @@
 This guide aims to clearly document the install, setup, and run processes in order to make `ssh-rdp` more accessible.
 
 ### Getting `ssh-rdp`
-**On Arch-based Linux distributions** run
+- **On Arch-based Linux distributions** run
 ```
 $ yay -S ssh-rdp-git
 ```
@@ -14,12 +14,11 @@ $ yay -S ssh-rdp-host-git
 ```
 on the remote machine.
 
-**On other Linux distributions** clone the GitHub repo via
+- **On other Linux distributions** clone the GitHub repo via
 ```
 $ git clone https://github.com/kokoko3k/ssh-rdp.git
 ```
-and then run commands from the `path/to/ssh-rdp` directory where the `ssh-rdp.sh` script is.
-You should be able to copy `ssh-rdp.sh` into `/usr/bin` to execute it from anywhere.
+and then run commands from the `path/to/ssh-rdp` directory where the `ssh-rdp.sh` script is (or better yet copy `/path/to/ssh-rdp/ssh-rdp.sh` into `/usr/bin` to execute it from anywhere).
 Also be sure to install all of the required software in the GitHub readme on the proper machines.
 
 ### SSH setup
@@ -68,6 +67,6 @@ Also be sure to install all of the required software in the GitHub readme on the
     $ ssh-rdp.sh --user <remote username> --server <remote machine alias> --display <value of $DISPLAY>.0 <other flags and options>
   ```
   (you'll probably want to create a bash function or alias for this in your shell configuration file [`~/.bashrc`, etc.])
-- play around with options like encoders, framerates, etc. to optimize your experience
+- play around with options like encoders, framerates, etc. (all documented in the `ssh-rdp` readme) to optimize your experience
 
 
